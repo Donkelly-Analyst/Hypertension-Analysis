@@ -107,7 +107,7 @@ Exploratory Data Analysis (EDA) was performed to understand the distribution, re
 
 
 
- ### *Limitation*
+ ### *Limitations*
 
  The hypertension analysis faced limitations such as missing or incomplete data that reduced accuracy, limited variables that restricted deeper insights, and possible reporting errors in lifestyle factors like smoking and sleep. The dataset size and lack of clinical measurements also prevented stronger conclusions and limited the ability to generalize findings.
 
