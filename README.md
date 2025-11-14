@@ -80,21 +80,20 @@ Exploratory Data Analysis (EDA) was performed to understand the distribution, re
 ### *Data Analysis*
 
 
-
 ```
-Number of Non-Smokers that Have Hypertension
+---Number of Non-Smokers that Have Hypertension
 SELECT COUNT(*) AS non_smokers_with_hypertension
 FROM health_data
 WHERE Smoking_Status = 'Non-Smoker'
   AND Hypertension = 'Yes';
 
-Sum of Stress_Score by BP_History
+---Sum of Stress_Score by BP_History
 SELECT BP_History,
        SUM(Stress_Score) AS total_stress_score
 FROM health_data
 GROUP BY BP_History;
 
-Sum of Salt_Intake by BP_History and Age_Grade
+---Sum of Salt_Intake by BP_History and Age_Grade
 
 SELECT BP_History,
        Age_Grade,
@@ -103,37 +102,34 @@ FROM health_data
 GROUP BY BP_History, Age_Grade
 ORDER BY BP_History, Age_Grade;
 
-Total Number of Smokers that are Hypertensive
+---Total Number of Smokers that are Hypertensive
 
 SELECT COUNT(*) AS smokers_with_hypertension
 FROM health_data
 WHERE Smoking_Status = 'Smoker'
   AND Hypertension = 'Yes';
 
-Sum of BP by Family_History
+---Sum of BP by Family_History
 
 SELECT Family_History,
        SUM(BP) AS total_bp
 FROM health_data
 GROUP BY Family_History;
 
-Sum of Sleep_Duration by BP_History
+---Sum of Sleep_Duration by BP_History
 
 SELECT BP_History,
        SUM(Sleep_Duration) AS total_sleep_duration
 FROM health_data
 GROUP BY BP_History;
 
-Sum of Stress_Score by Age Grade
+---Sum of Stress_Score by Age Grade
 
 SELECT Age_Grade,
        SUM(Stress_Score) AS total_stress_score
 FROM hypertension
 GROUP BY Age_Grade
 ORDER BY Age_Grade DESC;
-
-
-
 ```
 
 ### *Key Insights*
